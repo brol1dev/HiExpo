@@ -6,6 +6,7 @@ import { StyleSheet, Text, View } from "react-native";
 
 import migrations from "./drizzle/migrations";
 import { MyBarChart } from "./app/charts";
+import { Countries } from "./app/insert";
 
 const expoDb = openDatabaseSync("db.db");
 const db = drizzle(expoDb);
@@ -32,6 +33,7 @@ export default function App() {
       <Text>Open up App.js to start working wara on your app!</Text>
       <StatusBar style="auto" />
       <MyBarChart />
+      <Countries />
     </View>
   );
 }

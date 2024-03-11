@@ -16,6 +16,9 @@ export const countries = sqliteTable(
   })
 );
 
+export type Country = typeof countries.$inferSelect
+export type InsertCountry = typeof countries.$inferInsert
+
 export const cities = sqliteTable("cities", {
   id: integer("id").primaryKey(),
   name: text("name"),
