@@ -4,9 +4,9 @@ import { useMigrations } from "drizzle-orm/expo-sqlite/migrator";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 
-import migrations from "../drizzle/migrations";
-import { MyBarChart } from "../components/charts";
-import { Countries } from "../components/insert";
+import migrations from "../../drizzle/migrations";
+import { MyBarChart } from "../../components/charts";
+import { Countries } from "../../components/insert";
 import { Link } from "expo-router";
 
 const expoDb = openDatabaseSync("db.db");
